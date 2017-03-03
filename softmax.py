@@ -53,7 +53,7 @@ def main(_):
     #Import data
     #mnist = input_data.read_data_sets(FLAGS.data_dir, one_hot=True)
     # Define loss and optimizer
-    feature_num = 14
+    feature_num = 100
     traindata,number = readdense(feature_num)
     x = tf.placeholder(tf.float32, [None, feature_num])
     W = tf.Variable(tf.zeros([feature_num, 2]))
